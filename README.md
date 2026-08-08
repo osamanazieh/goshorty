@@ -2,7 +2,8 @@
 
 A simple URL shortener REST API built with **Go** and **PostgreSQL**.
 
-Project URL: https://github.com/osamanazieh/goshorty
+## Project URL
+https://github.com/osamanazieh/goshorty
 
 Shorty allows you to create shortened URLs, retrieve the original URLs using their short codes, update and delete existing URLs, and track how many times a shortened URL has been accessed.
 
