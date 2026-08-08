@@ -35,7 +35,7 @@ func main() {
 	mux.HandleFunc("GET /shorten/{short_code}", cfg.RetrieveOriginalURL)
 	mux.HandleFunc("PUT /shorten/{short_code}", cfg.UpdateURL)
 	mux.HandleFunc("DELETE /shorten/{short_code}", cfg.DeleteURL)
-	mux.HandleFunc("DELETE /shorten/{short_code}/stats", cfg.GetStats)
+	mux.HandleFunc("GET /shorten/{short_code}/stats", cfg.GetStats)
 	server := &http.Server{
 		Addr: ":8080", 
 		Handler: mux,
